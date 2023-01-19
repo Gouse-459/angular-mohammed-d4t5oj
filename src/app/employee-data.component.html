@@ -1,0 +1,15 @@
+<div *ngFor="let emp of employeeList; let i = index">
+  <div
+    class="card"
+    [style.background-color]="emp?.productColor"
+    style="width: 18rem;back;margin-top:5px;"
+  >
+    <div class="card-body">
+      <h5 class="card-title">{{ emp?.name }}</h5>
+      <p class="card-text">{{ emp?.country }}</p>
+      <p class="card-text">{{ emp?.availableAt }}</p>
+      <p class="card-text">{{ emp?.productPrice }}</p>
+      <p class="card-text">{{ emp?.country }}</p>
+    </div>
+  </div>
+</div>
